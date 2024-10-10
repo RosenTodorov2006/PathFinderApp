@@ -1,0 +1,26 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="Fragments/head">
+<body>
+<div class="wrapper">
+    <!-- Navigation -->
+    <header th:replace="Fragments/navbar::navbar()"></header>
+
+</header>
+
+    <section class="road" th:each="route: ${routes}">
+        <div>
+            <h2 th:text="${route.name}">Title</h2>
+            <p th:text="${route.description}">Very long description</p>
+            <a th:href="@{/routes_details/{id}(id = ${route.id})}" class="btn">Learn More</a>
+        </div>
+        <img th:if="${route.photo==null || route.photo.size()==0}" class="rounded-circle w-75 ml-5" src="/images/pic1.jpg" alt="Title image">
+        <img th:if="${route.photo!=null && route.photo.size()>0}" class="rounded-circle w-75 ml-5" th:src="${route.photo.get(0)}" alt="Title image">
+    </section>
+</div>
+<!-- Wrapper Ends -->
+</body>
+<footer class="footer bg-blur rounded" th:replace="Fragments/footer"></footer>
+
+</html>
