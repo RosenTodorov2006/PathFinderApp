@@ -1,0 +1,1 @@
+This project is a work in progress and is not yet fully completed. It has been used as a test project during my learning process and mainly serves for experimenting and trying out different techniques. Please note that some functionalities may not work correctly, as the project was created for educational purposes and experimentation.
