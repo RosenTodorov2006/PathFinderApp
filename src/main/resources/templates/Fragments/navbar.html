@@ -30,8 +30,8 @@
             <a href="/">Admin</a>
         </li>
         <li sec:authorize="isAuthenticated()">
-            <form th:method="post" th:action="@{/logout}">
-                <button type="submit">Logout</button>
+            <form th:method="post" th:action="@{/logout}" style='width: 100% !important; height: 90% !important;'>
+                <button  type="submit" style='width: 100% !important; height: 90% !important;'>Logout</button>
             </form>
         </li>
     </ul>
