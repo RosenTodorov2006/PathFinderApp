@@ -1,13 +1,13 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="Fragments/head">
+<head th:replace="~{Fragments/head}">
 
 </head>
 <body>
 <div class="wrapper">
     <!-- Navigation -->
-    <header th:replace="Fragments/navbar::navbar()"></header>
+    <header th:replace="~{Fragments/navbar::navbar()}"></header>
     <!-- Top Container -->
     <section class="top-container">
         <div class="showcase">
@@ -70,7 +70,7 @@
 </div>
 <!-- Wrapper Ends -->'
 
-<footer class="footer bg-blur rounded" th:replace="Fragments/footer"></footer>
+<footer class="footer bg-blur rounded" th:replace="~{Fragments/footer}"></footer>
 
 </body>
 

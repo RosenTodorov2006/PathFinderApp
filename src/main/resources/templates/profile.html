@@ -1,9 +1,9 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="Fragments/head">
+<head th:replace="~{Fragments/head}">
 <body>
-<header th:replace="Fragments/navbar::navbar()"></header>
+<header th:replace="~{Fragments/navbar::navbar()}"></header>
 
 
 <main class="p-5 align-content-center bg-blur my-register-div" th:object="${user}">
@@ -42,6 +42,6 @@
     </div>
 </main>
 </body>
-<footer class="footer bg-blur rounded" th:replace="Fragments/footer"></footer>
+<footer class="footer bg-blur rounded" th:replace="~{Fragments/footer}"></footer>
 
 </html>
