@@ -15,7 +15,6 @@ public class AddRouteDto {
     @Length(min = 5, message = "Description is too small")
     private String description;
 
-    //private Blob gpxCoordinates;
     @NotNull(message = "Invalid level")
     @NotEmpty(message = "Invalid level")
     private String level;
@@ -58,15 +57,6 @@ public class AddRouteDto {
     public void setVideoUrl(String videoUrl) {
         this.videoUrl = videoUrl;
     }
-
-//    public Blob getGpxCoordinates() {
-//        return gpxCoordinates;
-//    }
-//
-//    public void setGpxCoordinates(Blob gpxCoordinates) {
-//        this.gpxCoordinates = gpxCoordinates;
-//    }
-
 
     public String getCategories() {
         return categories;
