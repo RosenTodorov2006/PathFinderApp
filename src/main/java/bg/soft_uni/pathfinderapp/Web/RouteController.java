@@ -13,7 +13,6 @@ public class RouteController {
         this.routeService = routeService;
     }
 
-
     @GetMapping("/routes")
     public ModelAndView allRoutes(ModelAndView modelAndView){
         modelAndView.addObject("routes", routeService.getAllRoutes());
