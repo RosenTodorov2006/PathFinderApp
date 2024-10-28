@@ -28,19 +28,3 @@ spring:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-#Cloudinary Properties
-#cloudinary:
-  #api-key: 
-  #api-secret: 
-  #cloud-name: 
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: premierleaguescoresapp@gmail.com
-    password: beroe8294
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
